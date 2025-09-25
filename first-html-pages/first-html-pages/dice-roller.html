@@ -20,12 +20,29 @@
       font-size: 16px;
     }
 
+    #btn4{
+      background-color: #f8436e;
+    }
+
+    #btn8{
+      background-color: #9043f8;
+    }
+
     #btn10{
       background-color: #008CBA;
+    }
+
+    #btn12{
+      background-color: #f8c343;
     }
     
     #btn20{
       background-color: #f44336;
+    }
+
+    #btn100{
+      background-color: #ff00ff;
+      border: 2px dashed #f8c343;
     }
 
     button:hover {
@@ -36,9 +53,13 @@
 <body>
   <h1>Dice Roller!</h1>
   <div>
+    <button id="btn4">D4</button>
     <button id="btn6">D6</button>
+    <button id="btn8">D8</button>
     <button id="btn10">D10</button>
+    <button id="btn12">D12</button>
     <button id="btn20">D20</button>
+    <button id="btn100">D100</button>
   </div>
 
   <hr>
@@ -57,16 +78,32 @@
       numberSpan.innerHTML = number;
     }
 
+    btn4.onclick = function(){
+      showRandomInt(1, 4);
+    };
+    
     btn6.onclick = function(){
       showRandomInt(1, 6);
+    };
+
+    btn8.onclick = function(){
+      showRandomInt(1, 8);
     };
 
     btn10.onclick = function(){
       showRandomInt(1, 10);
     };
 
+    btn12.onclick = function(){
+      showRandomInt(1, 12);
+    };
+
     btn20.onclick = function(){
       showRandomInt(1, 20);
+    };
+
+    btn100.onclick = function(){
+      showRandomInt(1, 100);
     };
   </script>
 </body>
